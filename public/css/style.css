@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #b09ce7;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+ 
+
+ 
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .wrapper{
+    width: auto;
+    height: auto;
+
+ 
+}
+
+/* Navbar */
+.navbar {
+  
+  
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+/* Showcase */
+.showcase {
+  height: auto;
+  width: auto;
+ 
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.showcase form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.showcase form input,
+form select {
+  font-size: 20px;
+  width: 500px;
+  max-width: 500px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+form button {
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  transform: scale(1.1);
+}
+
+/* Image */
+
+.image {
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+  
+}
+
+img {
+  height: auto;
+  width: auto;
+  display: block;
+  margin: auto;
+  position: relative;
+  object-fit: contain;
+
+  
+}
+
+
+.msg {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+.img2{
+ 
+  position: relative;
+  object-fit: contain;
+  text-indent: -100%;
+  margin-bottom: 20vh;
+}
+
+
+.firstLine{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-top: 6vh;
+  background-color: transparent;
+  align-items: center;
+  
+  
+  
+  }
+  
+  .title-bar2{
+    /* 1 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5;
+    
+    /* 2 */
+    width: auto;
+    height: auto;
+    /* 3 */
+    display: block;
+    color: #FFFFFF;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .image-cont{
+    width: 100px; 
+    height: 100px;
+
+  }
