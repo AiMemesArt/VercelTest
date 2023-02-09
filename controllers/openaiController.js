@@ -4,6 +4,7 @@ const configuration = new Configuration({
   apiKey: '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',
 });
 
+console.log('apikey');
 const openai = new OpenAIApi(configuration);
 
 const generateImage = async (req, res) => {
