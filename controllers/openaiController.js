@@ -14,10 +14,10 @@ const generateImage = async (req, res) => {
 
   try {
     const response = await openai.createImage({
-      prompt: 'make me a funny meme about ' + prompt,
+      prompt: 'Style character Disney, detailed objects, Ultra High definition, blurred background, super detailed character, 3D Render, 8k, Hyper realistic , perfect composition, beautiful, detailed, octane render, cinematic perfect light, ' + prompt,
 
       n: 1,
-      size: imageSize,
+      size: '1024x1024',
     });
 
     console.log(req.body);
