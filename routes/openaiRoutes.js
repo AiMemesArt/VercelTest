@@ -5,7 +5,7 @@ const rateLimit = require('express-rate-limit');
 
 const createAccountLimiter = rateLimit({
   windowMs: 1440 * 60 * 1000,
-  max: 3,
+  max: 10,
   message:
     'Too many accounts created from this IP, please try again after a day',
   standardHeaders: true,
