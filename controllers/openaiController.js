@@ -14,7 +14,9 @@ const generateImage = async (req, res) => {
 
   try {
     const response = await openai.createImage({
-      prompt: 'Style character Disney, detailed objects, Ultra High definition, blurred background, super detailed character, 3D Render, 8k, Hyper realistic , perfect composition, beautiful, detailed, octane render, cinematic perfect light, ' + prompt,
+      prompt:
+        'Style character Disney, detailed objects, Ultra High definition, blurred background, super detailed character, 3D Render, 8k, Hyper realistic , perfect composition, beautiful, detailed, octane render, cinematic perfect light, ' +
+        prompt,
 
       n: 1,
       size: '1024x1024',
@@ -23,23 +25,18 @@ const generateImage = async (req, res) => {
     console.log(req.body);
     const imageUrl = response.data.data[0].url;
 
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       data: imageUrl,
     });
   } catch (error) {
-    if (error.response) {
-      console.log(error.response.status);
-      console.log(error.response.data);
-    } else {
-      console.log(error.message);
-    }
-
-    res.status(400).json({
-      success: false,
-      error: 'The Image Could Not Be Generated',
-    });
+    console.log('error', error);
   }
+
+  return res.status(400).json({
+    success: false,
+    error: 'The Image Could Not Be Generated',
+  });
 };
 
 module.exports = { generateImage };
